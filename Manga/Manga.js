@@ -9,7 +9,7 @@ class Manga {
   addProduct(newManga) {
     fs.readFile("./data/mang.json", (err, data) => {
       if (!err) {
-        console.log(JSON.parse(data));
+        // console.log(JSON.parse(data));
         const jsonData = JSON.parse(data);
         // console.log("jsonData ", JSON.parse(data));
         jsonData.push(newManga);
